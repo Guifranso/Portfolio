@@ -1,0 +1,24 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+[data-theme='dark'] html {
+  @apply 
+  dark:bg-back-primary-dark
+  bg-white
+}
+
+
+[data-theme='dark'] body {
+  @apply 
+  dark:bg-back-primary-dark
+  bg-white
+}
+
+@layer components {
+  .default-hover-item {
+    @apply  text-primary-light hover:text-hover-light 
+            dark:text-primary-dark dark:hover:text-hover-dark 
+              hover:cursor-pointer duration-200;
+  }  
+}
