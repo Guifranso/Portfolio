@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 
-export default function ScrollToTop () {
+import styles from './ScrollToTop.module.scss'
+
+export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
 
   const handleScroll = () => {
@@ -23,11 +25,10 @@ export default function ScrollToTop () {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-5 right-5 p-2 duration-300 ${
-        isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-      }`}
+      className={`${styles.button} ${isVisible ? styles.visible : styles.hidden
+        }`}
     >
-      <i className="px-6 default-hover-item text-4xl fa-solid fa-circle-up"></i>
+      <i className={`default-hover-item fa-solid fa-circle-up ${styles.icon}`}></i>
     </button>
   )
 }

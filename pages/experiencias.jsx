@@ -2,13 +2,15 @@ import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import ItemExperiencia from '../src/components/ItemExperiencia'
 
-export default function Experiencias () {
+import styles from '../src/styles/Experiencias.module.scss'
+
+export default function Experiencias() {
 	return (
-		<div className=" dark:bg-back-primary-dark flex flex-col justify-between">
+		<div className={styles.page}>
 			<Header></Header>
-            <main className="flex flex-col h-full w-2/4 mx-auto mt-12 dark:bg-back-primary-dark">
-                <h1 className="text-primary-light text-6xl font-bold my-10"> Experiências </h1>
-                <div className="flex flex-col w-max">
+			<main className={styles.main}>
+				<h1 className={styles.title}> Experiências </h1>
+				<div className={styles.list}>
 					<ItemExperiencia
 						funcao="Analista de sistemas"
 						instituicao="Arcom"
@@ -23,7 +25,7 @@ export default function Experiencias () {
 						descricao="Primeira experiência atuando como professor, ensinando desenvolvimento web básico com HTML e CSS"
 						imagemSrc="/sim-elas-podem.png"
 					/>
-					<h1 className="text-primary-light text-6xl font-bold my-10"> Educação </h1>
+					<h1 className={styles.title}> Educação </h1>
 					<ItemExperiencia
 						funcao="Técnico em desenvolvimento de jogos"
 						instituicao="IFTM"
@@ -45,9 +47,9 @@ export default function Experiencias () {
 						descricao="Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
 						imagemSrc="/ufu.png"
 					/>
-                </div>
-            </main>
-			<Footer/>
+				</div>
+			</main>
+			<Footer />
 		</div>
 	)
 }

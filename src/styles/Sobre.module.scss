@@ -1,0 +1,61 @@
+@import 'variables';
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    :global([data-theme='dark']) & {
+        background-color: $back-primary-dark;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+.title {
+    color: $primary-light;
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 2.5rem 0;
+}
+
+.content {
+    display: flex;
+}
+
+.image {
+    display: flex;
+    border-radius: 0.75rem;
+    width: 20rem;
+    height: 20rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: $gray-900;
+    font-weight: 300;
+
+    :global([data-theme='dark']) & {
+        color: $primary-dark;
+    }
+}
+
+.paragraph {
+    display: flex;
+    margin: 0.5rem 0;
+}

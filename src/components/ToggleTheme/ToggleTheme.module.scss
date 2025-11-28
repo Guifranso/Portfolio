@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.container {
+    display: none;
+
+    @media (min-width: 640px) {
+        display: block;
+    }
+}
+
+.icon {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 2.5rem;
+    display: block;
+
+    // Handle dark mode visibility
+    &.lightMode {
+        :global([data-theme='dark']) & {
+            display: none;
+        }
+    }
+
+    &.darkMode {
+        display: none;
+
+        :global([data-theme='dark']) & {
+            display: block;
+        }
+    }
+}

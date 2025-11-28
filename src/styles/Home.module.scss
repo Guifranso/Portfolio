@@ -1,0 +1,9 @@
+@import 'variables';
+
+.container {
+    height: 100vh;
+
+    :global([data-theme='dark']) & {
+        background-color: $back-primary-dark;
+    }
+}

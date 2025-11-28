@@ -1,0 +1,41 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; // bg-white
+    font-family: $font-sans;
+}
+
+[data-theme='dark'] {
+
+    html,
+    body {
+        background-color: $back-primary-dark;
+    }
+}
+
+.default-hover-item {
+    color: $primary-light;
+    cursor: pointer;
+    transition-duration: 200ms;
+
+    &:hover {
+        color: $hover-light;
+    }
+
+    // Handle dark mode when the parent has data-theme='dark'
+    // Note: Usually the class is on html/body, so we check for parent selector context
+    :global([data-theme='dark']) & {
+        color: $primary-dark;
+
+        &:hover {
+            color: $hover-dark;
+        }
+    }
+}
