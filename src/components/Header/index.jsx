@@ -1,17 +1,33 @@
 import React from 'react'
-import ToggleTheme from '../ToggleTheme'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import ToggleTheme from '../ToggleTheme'
 
 import styles from './Header.module.scss'
 
 export default function Header({ children, ...props }) {
+    const router = useRouter()
+
+    const navItems = [
+        { href: '/sobre', label: 'Sobre' },
+        { href: '/projetos', label: 'Projetos' },
+        { href: '/experiencias', label: 'Experiências' },
+    ]
+
     return (
         <div className={styles.header} {...props}>
             <span className={styles.logo}>  </span>
             <div className={styles.nav}>
-                <Link href="/sobre" passHref className={`default-hover-item ${styles.navItem}`}> Sobre </Link>
-                <Link href="/projetos" passHref className={`default-hover-item ${styles.navItem}`}> Projetos </Link>
-                <Link href="/experiencias" passHref className={`default-hover-item ${styles.navItem}`}> Experiências </Link>
+                {navItems.map((item) => (
+                    <Link
+                        key={item.href}
+                        href={item.href}
+                        passHref
+                        className={`default-hover-item ${styles.navItem} ${router.pathname === item.href ? styles.active : ''}`}
+                    >
+                        {item.label}
+                    </Link>
+                ))}
                 <ToggleTheme />
             </div>
         </div>
