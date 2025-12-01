@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import styles from '../src/styles/Sobre.module.scss'
 
-export default function Sobre() {
+export default function Sobre () {
     return (
         <div className={styles.page}>
             <Header />
@@ -19,9 +19,9 @@ export default function Sobre() {
                         alt="Picture of the author"
                     />
                     <div className={styles.textContainer}>
-                        <p className={styles.paragraph}>Olá! Sou Guilherme, apaixonado por tecnologia e programação! </p>
+                        <p className={styles.paragraph}>Olá! Sou Guilherme, apaixonado por tecnologia e programação!</p>
                         <p className={styles.paragraph}>
-                            residente em Uberlândia.
+                            Residente em Uberlândia.
                             Formei-me em Programação de Jogos, solidificando minha afinidade com o mundo digital. Atualmente, estudo Sistemas de Informação
                             na Universidade Federal de Uberlândia (UFU) e me envolvo em projetos pessoais.
                         </p>

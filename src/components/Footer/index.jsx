@@ -3,7 +3,7 @@ import ScrollToTop from '../ScrollToTop'
 
 import styles from './Footer.module.scss'
 
-export default function Footer() {
+export default function Footer () {
     return (
         <>
             <div className={styles.footer}>

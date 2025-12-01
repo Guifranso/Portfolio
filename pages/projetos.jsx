@@ -1,31 +1,45 @@
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
+import ProjectCard from '../src/components/ProjectCard'
 
 import styles from '../src/styles/Projetos.module.scss'
 
-export default function Projetos() {
+const projects = [
+    {
+        title: 'Dye Gather',
+        description: 'Jogo 2D feito em uma game jam; voce mistura cores recolhendo tintas pelo mapa para abrir caminho ate a saida.',
+        imageSrc: 'https://img.itch.zone/aW1nLzcxODE5MzgucG5n/original/Hr3dlu.png',
+        href: 'https://fabioaj.itch.io/dye-gather'
+    },
+    {
+        title: 'Reivals',
+        description: 'Arena shooter top-down com partidas curtas, foco em ritmo rapido e projeteis por todos os lados.',
+        imageSrc: 'https://img.itch.zone/aW1hZ2UvMTM3NTEzOS84MDI3NDY1LnBuZw==/original/vxa9e7.png',
+        href: 'https://fabioaj.itch.io/reivals'
+    },
+    {
+        title: 'Fall in the Rain',
+        description: 'Prototipo casual sobre descer enquanto desvia da chuva e dos obstaculos, feito para testar controles e atmosfera.',
+        imageSrc: 'https://img.itch.zone/aW1nLzEzNjU2MTczLnBuZw==/original/KK1C6C.png',
+        href: 'https://fabioaj.itch.io/fall-in-the-rain'
+    }
+]
+
+export default function Projetos () {
     return (
         <div className={styles.page}>
             <Header />
             <main className={styles.main}>
-                <h1 className={styles.title}> Projetos </h1>
-                <div className={styles.content}>
-                    <div className={styles.textContainer}>
-                        <p className={styles.paragraph}>Olá! Sou Guilherme, apaixonado por tecnologia e programação! </p>
-                        <p className={styles.paragraph}>
-                            residente em Uberlândia.
-                            Formei-me em Programação de Jogos, solidificando minha afinidade com o mundo digital. Atualmente, estudo Sistemas de Informação
-                            na Universidade Federal de Uberlândia (UFU) e me envolvo em projetos pessoais.
-                        </p>
-                        <p className={styles.paragraph}>
-                            Participei de hackathons e competições, aprendendo
-                            muito sobre a área. Estou animado com o futuro e comprometido a aplicar meus conhecimentos para contribuir com projetos que possam
-                            impactar positivamente as pessoas.
-                        </p>
-                        <p className={styles.paragraph}>
-                            Além de tudo, no meu tempo livre gosto de jogar e tocar guitarra.
-                        </p>
-                    </div>
+                <div className={styles.titleBlock}>
+                    <h1 className={styles.title}>Projetos</h1>
+                    <p className={styles.subtitle}>
+                        Alguns prototipos e jams que venho testando. Cada card leva direto para a pagina no itch.io com mais detalhes.
+                    </p>
+                </div>
+                <div className={styles.cards}>
+                    {projects.map((project) => (
+                        <ProjectCard key={project.href} {...project} />
+                    ))}
                 </div>
             </main>
             <Footer />

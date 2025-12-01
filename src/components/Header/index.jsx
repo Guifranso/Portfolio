@@ -11,24 +11,31 @@ export default function Header({ children, ...props }) {
     const navItems = [
         { href: '/sobre', label: 'Sobre' },
         { href: '/projetos', label: 'Projetos' },
-        { href: '/experiencias', label: 'Experiências' },
+        { href: '/experiencias', label: 'Experiências' }
     ]
 
     return (
-        <div className={styles.header} {...props}>
-            <span className={styles.logo}>  </span>
-            <div className={styles.nav}>
-                {navItems.map((item) => (
-                    <Link
-                        key={item.href}
-                        href={item.href}
-                        passHref
-                        className={`default-hover-item ${styles.navItem} ${router.pathname === item.href ? styles.active : ''}`}
-                    >
-                        {item.label}
-                    </Link>
-                ))}
-                <ToggleTheme />
+        <div className={styles.headerWrapper}>
+            <div className={styles.header} {...props}>
+                <span className={styles.logo}>  </span>
+                <div className={styles.nav}>
+                    {navItems.map((item) => (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            passHref
+                            className={`default-hover-item ${styles.navItem} ${router.pathname === item.href ? styles.active : ''}`}
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
+                </div>
+
+            </div>
+            <div className={styles.themeWrapper}>
+                <div className={styles.themeToggler}>
+                    <ToggleTheme />
+                </div>
             </div>
         </div>
     )

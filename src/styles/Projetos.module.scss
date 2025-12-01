@@ -1,10 +1,9 @@
 @import 'variables';
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;
@@ -12,41 +11,64 @@
 }
 
 .main {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
+    gap: 1.5rem;
+    width: min(1100px, 94vw);
+    margin: 0 auto;
+    padding: 3rem 0 4rem;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
 }
 
 .title {
+    margin: 0;
     color: $primary-light;
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 3.5rem;
+    line-height: 1.05;
     font-weight: 700;
-    margin: 2.5rem 0;
+    letter-spacing: -0.02em;
 }
 
-.content {
-    display: flex;
-}
-
-.textContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    color: $gray-900;
+.subtitle {
+    margin: 0;
+    max-width: 720px;
+    color: $gray-600;
     font-weight: 300;
+    line-height: 1.6;
 
     :global([data-theme='dark']) & {
         color: $primary-dark;
     }
 }
 
-.paragraph {
+.cards {
     display: flex;
-    margin: 0.5rem 0;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 92vw;
+        padding: 2.5rem 0 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .title {
+        font-size: 2.5rem;
+    }
 }

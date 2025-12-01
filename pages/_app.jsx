@@ -2,7 +2,7 @@ import '../src/styles/globals.scss'
 
 import { ThemeProvider } from 'next-themes'
 
-function MyApp({ Component, pageProps }) {
+function MyApp ({ Component, pageProps }) {
     return (
         <>
             <ThemeProvider attribute="data-theme">
