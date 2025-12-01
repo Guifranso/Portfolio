@@ -17,9 +17,9 @@ export default function ProjectCard ({ title, description, imageSrc, href }) {
             <div className={styles.content}>
                 <div className={styles.titleRow}>
                     <h2 className={styles.cardTitle}>{title}</h2>
-                    <span className={styles.external}>Ver projeto -&gt;</span>
                 </div>
                 <p className={styles.description}>{description}</p>
+                <span className={styles.cta}>Ver Projeto</span>
             </div>
         </a>
     )

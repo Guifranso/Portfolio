@@ -113,6 +113,10 @@
         transform: translateY(-1px);
     }
 
+    &:active {
+        animation: navTap 240ms ease;
+    }
+
     :global([data-theme='dark']) & {
         background: rgba(255, 255, 255, 0.08);
         border-color: rgba(255, 255, 255, 0.14);
@@ -138,6 +142,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: color 180ms ease, border-color 180ms ease, background 200ms ease, transform 200ms ease, box-shadow 220ms ease;
+    will-change: transform;
 
     &:hover {
         color: var(--chip-text) !important;
@@ -145,6 +150,10 @@
         background: var(--chip-hover-bg);
         box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
         transform: translateY(-1px);
+    }
+
+    &:active {
+        animation: navTap 240ms ease;
     }
 }
 
@@ -154,6 +163,18 @@
     box-shadow: var(--chip-active-shadow);
     color: var(--chip-text) !important;
     border-radius: 999px;
+}
+
+@keyframes navTap {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    45% {
+        transform: translateY(1px) scale(0.97);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
 }
 
 @media (max-width: 640px) {
