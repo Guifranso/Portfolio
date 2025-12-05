@@ -1,11 +1,12 @@
-import Header from '../src/components/Header'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
-import styles from '../src/styles/Home.module.scss'
+export default function HomePage() {
+	const router = useRouter()
 
-export default function HomePage () {
-	return (
-		<div className={styles.container}>
-			<Header></Header>
-		</div>
-	)
+	useEffect(() => {
+		router.replace('/sobre')
+	}, [router])
+
+	return null
 }
