@@ -8,7 +8,6 @@
         "standard",
         "plugin:react/recommended"
     ],
-
     "parserOptions": {
         "requireConfigFile": false,
         "ecmaVersion": "latest",
@@ -27,8 +26,25 @@
         "indent": "off",
         "no-tabs": 0,
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/no-unknown-property": ["error", { "ignore": ["jsx", "global", "-"] }]
-      }
-    
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/no-unknown-property": [
+            "error",
+            {
+                "ignore": [
+                    "jsx",
+                    "global",
+                    "-"
+                ]
+            }
+        ],
+        "space-before-function-paren": "off"
+    }
 }
