@@ -1,50 +1,53 @@
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import ItemExperiencia from '../src/components/ItemExperiencia'
+import { useTranslations } from 'next-intl'
 
 import styles from '../src/styles/Experiencias.module.scss'
 
-export default function Experiencias () {
+export default function Experiencias() {
+    const t = useTranslations('experiences')
+
     return (
         <div className={styles.page}>
             <Header />
             <main className={styles.main}>
-                <h1 className={styles.title}> Experiências </h1>
+                <h1 className={styles.title}>{t('title')}</h1>
                 <div className={styles.list}>
                     <ItemExperiencia
-                        funcao="Analista de sistemas"
-                        instituicao="Arcom"
-                        prazo="Maio de 2021 - Agosto de 2023"
-                        descricao="Primeiro emprego atuando na área, trabalhando como desenvolvedor utilizando Java, React e Android."
+                        funcao={t('items.arcom.role')}
+                        instituicao={t('items.arcom.institution')}
+                        prazo={t('items.arcom.period')}
+                        descricao={t('items.arcom.description')}
                         imagemSrc="/arcom.png"
                     />
                     <ItemExperiencia
-                        funcao="Professor"
-                        instituicao="IFTM"
-                        prazo="Agosto de 2022 - Outubro de 2022"
-                        descricao="Primeira experiência atuando como professor, ensinando desenvolvimento web básico com HTML e CSS."
+                        funcao={t('items.iftmTeacher.role')}
+                        instituicao={t('items.iftmTeacher.institution')}
+                        prazo={t('items.iftmTeacher.period')}
+                        descricao={t('items.iftmTeacher.description')}
                         imagemSrc="/sim-elas-podem.png"
                     />
-                    <h1 className={styles.title}> Educação </h1>
+                    <h1 className={styles.title}>{t('educationTitle')}</h1>
                     <ItemExperiencia
-                        funcao="Técnico em desenvolvimento de jogos"
-                        instituicao="IFTM"
-                        prazo="janeiro de 2020 - dezembro de 2022"
-                        descricao="Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
+                        funcao={t('items.iftmStudent.role')}
+                        instituicao={t('items.iftmStudent.institution')}
+                        prazo={t('items.iftmStudent.period')}
+                        descricao={t('items.iftmStudent.description')}
                         imagemSrc="/iftm.jpg"
                     />
                     <ItemExperiencia
-                        funcao="Diploma em desenvolvedor de jogos e web"
-                        instituicao="Techers"
-                        prazo="setembro de 2019 - dezembro de 2023"
-                        descricao="Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
+                        funcao={t('items.techers.role')}
+                        instituicao={t('items.techers.institution')}
+                        prazo={t('items.techers.period')}
+                        descricao={t('items.techers.description')}
                         imagemSrc="/techers.png"
                     />
                     <ItemExperiencia
-                        funcao="Estudante"
-                        instituicao="UFU"
-                        prazo="fevereiro de 2023 - dezembro de 2026"
-                        descricao="Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
+                        funcao={t('items.ufu.role')}
+                        instituicao={t('items.ufu.institution')}
+                        prazo={t('items.ufu.period')}
+                        descricao={t('items.ufu.description')}
                         imagemSrc="/ufu.png"
                     />
                 </div>

@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "experiences": "Experiências"
+    },
+    "about": {
+        "title": "Sobre",
+        "greeting": "Olá! Sou Guilherme, apaixonado por tecnologia e programação!",
+        "location": "Residente em Uberlândia.",
+        "education1": "Formei-me em Programação de Jogos, solidificando minha afinidade com o mundo digital. Atualmente, estudo Sistemas de Informação na Universidade Federal de Uberlândia (UFU) e me envolvo em projetos pessoais.",
+        "education2": "Participei de hackathons e competições, aprendendo muito sobre a área. Estou animado com o futuro e comprometido a aplicar meus conhecimentos para contribuir com projetos que possam impactar positivamente as pessoas.",
+        "hobbies": "Além de tudo, no meu tempo livre gosto de jogar e tocar guitarra.",
+        "imageAlt": "Foto do autor"
+    },
+    "projects": {
+        "title": "Projetos",
+        "subtitle": "Alguns protótipos e jams que venho testando. Cada card leva direto para a página no itch.io com mais detalhes.",
+        "items": {
+            "dyeGather": {
+                "title": "Dye Gather",
+                "description": "Jogo 2D feito em uma game jam; você mistura cores recolhendo tintas pelo mapa para abrir caminho até a saída."
+            },
+            "reivals": {
+                "title": "Reivals",
+                "description": "Arena shooter top-down com partidas curtas, foco em ritmo rápido e projéteis por todos os lados."
+            },
+            "fallInTheRain": {
+                "title": "Fall in the Rain",
+                "description": "Protótipo casual sobre descer enquanto desvia da chuva e dos obstáculos, feito para testar controles e atmosfera."
+            }
+        }
+    },
+    "experiences": {
+        "title": "Experiências",
+        "educationTitle": "Educação",
+        "items": {
+            "arcom": {
+                "role": "Analista de sistemas",
+                "institution": "Arcom",
+                "period": "Maio de 2021 - Agosto de 2023",
+                "description": "Primeiro emprego atuando na área, trabalhando como desenvolvedor utilizando Java, React e Android."
+            },
+            "iftmTeacher": {
+                "role": "Professor",
+                "institution": "IFTM",
+                "period": "Agosto de 2022 - Outubro de 2022",
+                "description": "Primeira experiência atuando como professor, ensinando desenvolvimento web básico com HTML e CSS."
+            },
+            "iftmStudent": {
+                "role": "Técnico em desenvolvimento de jogos",
+                "institution": "IFTM",
+                "period": "Janeiro de 2020 - Dezembro de 2022",
+                "description": "Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
+            },
+            "techers": {
+                "role": "Diploma em desenvolvedor de jogos e web",
+                "institution": "Techers",
+                "period": "Setembro de 2019 - Dezembro de 2023",
+                "description": "Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
+            },
+            "ufu": {
+                "role": "Estudante",
+                "institution": "UFU",
+                "period": "Fevereiro de 2023 - Dezembro de 2026",
+                "description": "Cursando Sistemas de Informação, ampliando conhecimentos em desenvolvimento de software e tecnologias."
+            }
+        }
+    },
+    "language": {
+        "switch": "EN",
+        "current": "Português"
+    }
+}

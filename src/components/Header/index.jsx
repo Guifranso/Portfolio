@@ -1,17 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useTranslations } from 'next-intl'
 import ToggleTheme from '../ToggleTheme'
 
 import styles from './Header.module.scss'
 
 export default function Header({ children, ...props }) {
     const router = useRouter()
+    const t = useTranslations('nav')
 
     const navItems = [
-        { href: '/sobre', label: 'Sobre' },
-        { href: '/projetos', label: 'Projetos' },
-        { href: '/experiencias', label: 'Experiências' }
+        { href: '/sobre', label: t('about') },
+        { href: '/projetos', label: t('projects') },
+        { href: '/experiencias', label: t('experiences') }
     ]
 
     return (

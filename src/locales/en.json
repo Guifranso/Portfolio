@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "experiences": "Experience"
+    },
+    "about": {
+        "title": "About",
+        "greeting": "Hi! I'm Guilherme, passionate about technology and programming!",
+        "location": "Based in Uberlândia, Brazil.",
+        "education1": "I graduated in Game Development, solidifying my affinity with the digital world. Currently, I'm studying Information Systems at the Federal University of Uberlândia (UFU) and working on personal projects.",
+        "education2": "I've participated in hackathons and competitions, learning a lot about the field. I'm excited about the future and committed to applying my knowledge to contribute to projects that can positively impact people.",
+        "hobbies": "Besides all that, in my free time I enjoy gaming and playing guitar.",
+        "imageAlt": "Author's photo"
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "Some prototypes and game jams I've been working on. Each card links directly to the itch.io page with more details.",
+        "items": {
+            "dyeGather": {
+                "title": "Dye Gather",
+                "description": "2D game made in a game jam; you mix colors by collecting paints across the map to clear a path to the exit."
+            },
+            "reivals": {
+                "title": "Reivals",
+                "description": "Top-down arena shooter with short matches, focusing on fast-paced action and projectiles everywhere."
+            },
+            "fallInTheRain": {
+                "title": "Fall in the Rain",
+                "description": "Casual prototype about falling while dodging rain and obstacles, made to test controls and atmosphere."
+            }
+        }
+    },
+    "experiences": {
+        "title": "Experience",
+        "educationTitle": "Education",
+        "items": {
+            "arcom": {
+                "role": "Systems Analyst",
+                "institution": "Arcom",
+                "period": "May 2021 - August 2023",
+                "description": "First job in the field, working as a developer using Java, React, and Android."
+            },
+            "iftmTeacher": {
+                "role": "Teacher",
+                "institution": "IFTM",
+                "period": "August 2022 - October 2022",
+                "description": "First experience as a teacher, teaching basic web development with HTML and CSS."
+            },
+            "iftmStudent": {
+                "role": "Game Development Technician",
+                "institution": "IFTM",
+                "period": "January 2020 - December 2022",
+                "description": "Complete course where I learned about game development with Unity, Game Maker, Unreal, and other technologies."
+            },
+            "techers": {
+                "role": "Diploma in Game and Web Development",
+                "institution": "Techers",
+                "period": "September 2019 - December 2023",
+                "description": "Complete course where I learned about game development with Unity, Game Maker, Unreal, and other technologies."
+            },
+            "ufu": {
+                "role": "Student",
+                "institution": "UFU",
+                "period": "February 2023 - December 2026",
+                "description": "Studying Information Systems, expanding knowledge in software development and technologies."
+            }
+        }
+    },
+    "language": {
+        "switch": "PT",
+        "current": "English"
+    }
+}
