@@ -47,3 +47,30 @@
     opacity: 0.7;
     transition: transform 0.3s ease;
 }
+
+// Tablet and Mobile: move language switcher to bottom left
+@media (max-width: 768px) {
+    .switcher {
+        top: auto;
+        right: auto;
+        bottom: 1.25rem;
+        left: 1.25rem;
+    }
+}
+
+// Small mobile: adjust padding for smaller screens
+@media (max-width: 520px) {
+    .switcher {
+        bottom: 1rem;
+        left: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .flag {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        font-size: 0.75rem;
+    }
+}
