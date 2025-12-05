@@ -9,7 +9,6 @@ export default function Projetos() {
     const t = useTranslations('projects')
     const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
 
-
     const projects = [
         {
             title: t('items.dyeGather.title'),
