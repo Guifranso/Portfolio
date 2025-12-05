@@ -1,10 +1,21 @@
 import Image from 'next/image'
+import { useScrollReveal } from '../../hooks/useScrollReveal'
 
 import styles from './ProjectCard.module.scss'
 
-export default function ProjectCard ({ title, description, imageSrc, href }) {
+export default function ProjectCard({ title, description, imageSrc, href, delay = 0 }) {
+    const [ref, isVisible] = useScrollReveal({ threshold: 0.1 })
+
+    const delayClass = delay > 0 ? `scroll-reveal-delay-${Math.min(delay, 5)}` : ''
+
     return (
-        <a href={href} target="_blank" rel="noreferrer" className={styles.card}>
+        <a
+            ref={ref}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.card} scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''} ${delayClass}`}
+        >
             <div className={styles.imageWrapper}>
                 <Image
                     src={imageSrc}

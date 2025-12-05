@@ -1,11 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
+import { useScrollReveal } from '../../hooks/useScrollReveal'
 
 import styles from './ItemExperiencia.module.scss'
 
-export default function ItemExperiencia({ funcao, instituicao, prazo, descricao, imagemSrc }) {
+export default function ItemExperiencia({ funcao, instituicao, prazo, descricao, imagemSrc, delay = 0 }) {
+    const [ref, isVisible] = useScrollReveal({ threshold: 0.1 })
+
+    const delayClass = delay > 0 ? `scroll-reveal-delay-${Math.min(delay, 5)}` : ''
+
     return (
-        <div className={styles.container}>
+        <div
+            ref={ref}
+            className={`${styles.container} scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''} ${delayClass}`}
+        >
             <Image
                 className={styles.image}
                 src={imagemSrc}

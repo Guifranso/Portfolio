@@ -2,11 +2,13 @@ import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import ProjectCard from '../src/components/ProjectCard'
 import { useTranslations } from 'next-intl'
-
+import { useScrollReveal } from '../src/hooks/useScrollReveal'
 import styles from '../src/styles/Projetos.module.scss'
 
 export default function Projetos() {
     const t = useTranslations('projects')
+    const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
+
 
     const projects = [
         {
@@ -34,11 +36,18 @@ export default function Projetos() {
             <Header />
             <main className={styles.main}>
                 <div className={styles.titleBlock}>
-                    <h1 className={styles.title}>{t('title')}</h1>
+                    <h1
+                        ref={titleRef}
+                        className={`${styles.title} scroll-reveal ${titleVisible ? 'scroll-reveal-visible' : ''}`}
+                    >{t('title')}</h1>
                 </div>
                 <div className={styles.cards}>
-                    {projects.map((project) => (
-                        <ProjectCard key={project.href} {...project} />
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={project.href}
+                            {...project}
+                            delay={index + 1}
+                        />
                     ))}
                 </div>
             </main>
