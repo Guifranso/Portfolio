@@ -6,10 +6,10 @@
     },
     "about": {
         "title": "Sobre",
-        "greeting": "Olá! Sou Guilherme, apaixonado por tecnologia e programação!",
-        "location": "Residente em Uberlândia.",
-        "education1": "Formei-me em Programação de Jogos, solidificando minha afinidade com o mundo digital. Atualmente, estudo Sistemas de Informação na Universidade Federal de Uberlândia (UFU) e me envolvo em projetos pessoais.",
-        "education2": "Participei de hackathons e competições, aprendendo muito sobre a área. Estou animado com o futuro e comprometido a aplicar meus conhecimentos para contribuir com projetos que possam impactar positivamente as pessoas.",
+        "greeting": "Olá! Sou Guilherme, Desenvolvedor Fullstack!",
+        "location": "Residente em Uberlândia, MG.",
+        "education1": "Desenvolvedor com interesse em gestão, desenvolvimento e otimização de projetos. Alto desempenho e rápido aprendizado, com experiências em diversas áreas, como desenvolvimento Web (Fullstack), Mobile, Scripting, Cloud, desenvolvimento de jogos e atuação na área educacional como professor de programação.",
+        "education2": "Participei de hackathons e competições, conquistando 1º lugar no Hackaton SuperGeeks Play for Family (2019) e 1º lugar no Hackaton Techers We code we change (2022). Estou animado com o futuro e comprometido a aplicar meus conhecimentos para contribuir com projetos que possam impactar positivamente as pessoas.",
         "hobbies": "Além de tudo, no meu tempo livre gosto de jogar e tocar guitarra.",
         "imageAlt": "Foto do autor"
     },
@@ -34,11 +34,29 @@
         "title": "Experiências",
         "educationTitle": "Educação",
         "items": {
+            "ford": {
+                "role": "Desenvolvedor e Pesquisador",
+                "institution": "Ford",
+                "period": "Janeiro de 2025 - Presente",
+                "description": "Desenvolvimento de projetos internos utilizando Angular, Spring e SQL."
+            },
+            "bioma": {
+                "role": "Desenvolvedor Fullstack",
+                "institution": "Bioma Investimentos",
+                "period": "Agosto de 2025 - Setembro de 2025",
+                "description": "Desenvolvimento e manutenção de projetos SaaS com Java (Sistemas legados), Javascript (Next e Nest), Python (Fast API), AWS, Docker e bancos relacionais e não relacionais."
+            },
+            "wisebyte": {
+                "role": "Desenvolvedor Java Backend",
+                "institution": "Wisebyte",
+                "period": "Novembro de 2023 - Dezembro de 2024",
+                "description": "Desenvolvimento backend de sistemas financeiros, como integrações de sistemas de débito automático, Crawlers para sistemas de coletas e testes, além de integração de sistemas externos utilizando Java com Quarkus, mensageria com Kafka, scripting com Shell e Python (Selenium) e uso de AWS e Docker."
+            },
             "arcom": {
-                "role": "Analista de sistemas",
-                "institution": "Arcom",
-                "period": "Maio de 2021 - Agosto de 2023",
-                "description": "Primeiro emprego atuando na área, trabalhando como desenvolvedor utilizando Java, React e Android."
+                "role": "Desenvolvedor Fullstack",
+                "institution": "ARCOM",
+                "period": "Junho de 2023 - Janeiro de 2024",
+                "description": "Desenvolvimento de projetos utilizando React, TypeScript, Java, Kotlin, SQL e Python (Flask), como gerenciamento de estoque e ecommerce através de sites ou dispositivos móveis e sistemas auxiliares para empilhadeiras e paleteiras."
             },
             "iftmTeacher": {
                 "role": "Professor",
@@ -46,23 +64,23 @@
                 "period": "Agosto de 2022 - Outubro de 2022",
                 "description": "Primeira experiência atuando como professor, ensinando desenvolvimento web básico com HTML e CSS."
             },
+            "ufu": {
+                "role": "Bacharelado em Sistemas de Informação",
+                "institution": "Universidade Federal de Uberlândia",
+                "period": "2023 - 2026",
+                "description": "Desenvolvimento de software com C, C++ e Java. Arquitetura de projetos, engenharia de software e computação em geral, incluindo algoritmos e estruturas de dados. Participação de projetos acadêmicos envolvendo aplicações e soluções."
+            },
             "iftmStudent": {
-                "role": "Técnico em desenvolvimento de jogos",
-                "institution": "IFTM",
-                "period": "Janeiro de 2020 - Dezembro de 2022",
-                "description": "Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
+                "role": "Técnico em Programação de Jogos Digitais",
+                "institution": "Instituto Federal do Triângulo Mineiro",
+                "period": "2020 - 2022",
+                "description": "Habilidades em programação com C, C++, C#, Python e uso de engines como Unity. SQL e bancos de dados, criando sistemas e jogos completos. Participação em projetos envolvendo design de jogos, lógica de programação e gestão."
             },
             "techers": {
-                "role": "Diploma em desenvolvedor de jogos e web",
-                "institution": "Techers",
-                "period": "Setembro de 2019 - Dezembro de 2023",
-                "description": "Curso completo no qual aprendi sobre desenvolvimentos de jogos com Unity, Game Maker, Unreal e outras tecnologias."
-            },
-            "ufu": {
-                "role": "Estudante",
-                "institution": "UFU",
-                "period": "Fevereiro de 2023 - Dezembro de 2026",
-                "description": "Cursando Sistemas de Informação, ampliando conhecimentos em desenvolvimento de software e tecnologias."
+                "role": "Desenvolvimento de Aplicações e Jogos",
+                "institution": "Techers - Escola de Tecnologia",
+                "period": "2019 - 2022",
+                "description": "Especialização em desenvolvimento web com JavaScript, HTML e CSS. Desenvolvimento de jogos em C#, Python e engines como Unity e Unreal. Participação em projetos e hackatons desde a concepção até a implementação de jogos e aplicações mobile/web."
             }
         }
     },

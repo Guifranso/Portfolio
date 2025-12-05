@@ -6,10 +6,10 @@
     },
     "about": {
         "title": "About",
-        "greeting": "Hi! I'm Guilherme, passionate about technology and programming!",
+        "greeting": "Hi! I'm Guilherme, a Fullstack Developer!",
         "location": "Based in Uberlândia, Brazil.",
-        "education1": "I graduated in Game Development, solidifying my affinity with the digital world. Currently, I'm studying Information Systems at the Federal University of Uberlândia (UFU) and working on personal projects.",
-        "education2": "I've participated in hackathons and competitions, learning a lot about the field. I'm excited about the future and committed to applying my knowledge to contribute to projects that can positively impact people.",
+        "education1": "Developer interested in management, development, and project optimization. High performance and fast learner, with experience in diverse areas such as Web Development (Fullstack), Mobile, Scripting, Cloud, Game Development, and acting in the educational field as a programming teacher.",
+        "education2": "I've participated in hackathons and competitions, achieving 1st place at SuperGeeks Play for Family Hackathon (2019) and 1st place at Techers We code we change Hackathon (2022). I'm excited about the future and committed to applying my knowledge to contribute to projects that can positively impact people.",
         "hobbies": "Besides all that, in my free time I enjoy gaming and playing guitar.",
         "imageAlt": "Author's photo"
     },
@@ -34,11 +34,29 @@
         "title": "Experience",
         "educationTitle": "Education",
         "items": {
+            "ford": {
+                "role": "Developer and Researcher",
+                "institution": "Ford",
+                "period": "January 2025 - Present",
+                "description": "Development of internal projects using Angular, Spring, and SQL."
+            },
+            "bioma": {
+                "role": "Fullstack Developer",
+                "institution": "Bioma Investimentos",
+                "period": "August 2025 - September 2025",
+                "description": "Development and maintenance of SaaS projects with Java (Legacy systems), Javascript (Next and Nest), Python (Fast API), AWS, Docker, and relational and non-relational databases."
+            },
+            "wisebyte": {
+                "role": "Java Backend Developer",
+                "institution": "Wisebyte",
+                "period": "November 2023 - December 2024",
+                "description": "Backend development of financial systems, such as automatic debit system integrations, Crawlers for collection and testing systems, as well as external system integration using Java with Quarkus, messaging with Kafka, scripting with Shell and Python (Selenium), and use of AWS and Docker."
+            },
             "arcom": {
-                "role": "Systems Analyst",
-                "institution": "Arcom",
-                "period": "May 2021 - August 2023",
-                "description": "First job in the field, working as a developer using Java, React, and Android."
+                "role": "Fullstack Developer",
+                "institution": "ARCOM",
+                "period": "June 2023 - January 2024",
+                "description": "Project development using React, TypeScript, Java, Kotlin, SQL, and Python (Flask), such as stock management and e-commerce through websites or mobile devices and auxiliary systems for forklifts and pallet trucks."
             },
             "iftmTeacher": {
                 "role": "Teacher",
@@ -46,23 +64,23 @@
                 "period": "August 2022 - October 2022",
                 "description": "First experience as a teacher, teaching basic web development with HTML and CSS."
             },
+            "ufu": {
+                "role": "Bachelor of Information Systems",
+                "institution": "Federal University of Uberlândia",
+                "period": "2023 - 2026",
+                "description": "Software development with C, C++, and Java. Project architecture, software engineering, and general computing, including algorithms and data structures. Participation in academic projects involving applications and solutions."
+            },
             "iftmStudent": {
-                "role": "Game Development Technician",
-                "institution": "IFTM",
-                "period": "January 2020 - December 2022",
-                "description": "Complete course where I learned about game development with Unity, Game Maker, Unreal, and other technologies."
+                "role": "Technician in Digital Game Programming",
+                "institution": "Federal Institute of Triângulo Mineiro",
+                "period": "2020 - 2022",
+                "description": "Programming skills with C, C++, C#, Python, and use of engines like Unity. SQL and databases, creating complete systems and games. Participation in projects involving game design, programming logic, and management."
             },
             "techers": {
-                "role": "Diploma in Game and Web Development",
-                "institution": "Techers",
-                "period": "September 2019 - December 2023",
-                "description": "Complete course where I learned about game development with Unity, Game Maker, Unreal, and other technologies."
-            },
-            "ufu": {
-                "role": "Student",
-                "institution": "UFU",
-                "period": "February 2023 - December 2026",
-                "description": "Studying Information Systems, expanding knowledge in software development and technologies."
+                "role": "Application and Game Development",
+                "institution": "Techers - School of Technology",
+                "period": "2019 - 2022",
+                "description": "Specialization in web development with JavaScript, HTML, and CSS. Game development in C#, Python, and engines like Unity and Unreal. Participation in projects and hackathons from conception to implementation of games and mobile/web applications."
             }
         }
     },
