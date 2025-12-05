@@ -4,6 +4,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 4.5rem; // Compensate for fixed header
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;
@@ -68,6 +69,10 @@
 }
 
 @media (max-width: 540px) {
+    .page {
+        padding-top: 4rem;
+    }
+
     .title {
         font-size: 2.5rem;
     }

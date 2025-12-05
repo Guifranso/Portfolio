@@ -2,8 +2,15 @@
 
 .container {
     height: 100vh;
+    padding-top: 4.5rem; // Compensate for fixed header
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-top: 4rem;
     }
 }

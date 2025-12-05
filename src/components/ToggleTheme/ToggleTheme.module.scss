@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .container {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -11,10 +11,6 @@
     background: transparent;
     cursor: pointer;
     appearance: none;
-
-    @media (min-width: 640px) {
-        display: flex;
-    }
 
     &:focus-visible {
         outline: 2px solid rgba(145, 145, 145, 0.18);
@@ -52,5 +48,13 @@
             display: block;
             color: #d1d1d1
         }
+    }
+}
+
+// Mobile
+@media (max-width: 480px) {
+    .icon {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
     }
 }
