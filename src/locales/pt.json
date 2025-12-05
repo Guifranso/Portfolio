@@ -15,7 +15,6 @@
     },
     "projects": {
         "title": "Projetos",
-        "subtitle": "Alguns protótipos e jams que venho testando. Cada card leva direto para a página no itch.io com mais detalhes.",
         "items": {
             "dyeGather": {
                 "title": "Dye Gather",

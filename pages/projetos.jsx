@@ -35,9 +35,6 @@ export default function Projetos() {
             <main className={styles.main}>
                 <div className={styles.titleBlock}>
                     <h1 className={styles.title}>{t('title')}</h1>
-                    <p className={styles.subtitle}>
-                        {t('subtitle')}
-                    </p>
                 </div>
                 <div className={styles.cards}>
                     {projects.map((project) => (

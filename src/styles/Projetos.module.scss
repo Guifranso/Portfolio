@@ -37,18 +37,6 @@
     letter-spacing: -0.02em;
 }
 
-.subtitle {
-    margin: 0;
-    max-width: 720px;
-    color: $gray-600;
-    font-weight: 300;
-    line-height: 1.6;
-
-    :global([data-theme='dark']) & {
-        color: $primary-dark;
-    }
-}
-
 .cards {
     display: flex;
     flex-direction: column;
