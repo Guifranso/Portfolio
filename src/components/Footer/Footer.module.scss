@@ -17,22 +17,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0;
 }
 
 .icon {
-    padding: 0.75rem;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     line-height: 1;
-    text-decoration: none;
-    display: inline-flex;
+    color: inherit;
+}
+
+.iconText {
+    font-size: 1rem;
+    font-weight: 500;
+    color: inherit;
+}
+
+.iconLink {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    transition: transform 200ms ease;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 200ms ease;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: $gray-900;
+
+    :global([data-theme='dark']) & {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: $primary-dark;
+    }
 
     &:hover {
-        transform: scale(1.1);
+        transform: translateY(-2px);
+        background: rgba(0, 0, 0, 0.06);
+
+        :global([data-theme='dark']) & {
+            background: rgba(255, 255, 255, 0.1);
+            color: $primary-dark;
+        }
     }
 }
 
@@ -42,8 +68,19 @@
         padding: 2rem 1rem;
     }
 
+    .iconsContainer {
+        gap: 1rem;
+    }
+
+    .iconLink {
+        padding: 0.5rem 0.75rem;
+    }
+
     .icon {
-        font-size: 1.5rem;
-        padding: 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    .iconText {
+        font-size: 0.9rem;
     }
 }

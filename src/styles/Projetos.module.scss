@@ -35,6 +35,70 @@
     line-height: 1.05;
     font-weight: 700;
     letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.filterContainer {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.filterButton {
+    --chip-text: rgba(58, 58, 58, 0.65);
+    --chip-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25));
+    --chip-border: rgba(0, 0, 0, 0.06);
+    --chip-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --chip-hover-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.45));
+    --chip-hover-border: rgba(0, 0, 0, 0.1);
+    --chip-hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    --chip-active-text: #3a3a3a;
+    --chip-active-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7));
+    --chip-active-border: rgba(0, 0, 0, 0.12);
+    --chip-active-shadow: 0 10px 28px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--chip-border);
+    border-radius: 999px;
+    background: var(--chip-bg);
+    color: var(--chip-text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 200ms ease;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: var(--chip-shadow);
+
+    :global([data-theme='dark']) & {
+        --chip-text: rgba(232, 233, 237, 0.55);
+        --chip-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+        --chip-border: rgba(255, 255, 255, 0.06);
+        --chip-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        --chip-hover-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        --chip-hover-border: rgba(255, 255, 255, 0.12);
+        --chip-hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        --chip-active-text: #e8e9ed;
+        --chip-active-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
+        --chip-active-border: rgba(255, 255, 255, 0.18);
+        --chip-active-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    &:hover {
+        background: var(--chip-hover-bg);
+        border-color: var(--chip-hover-border);
+        box-shadow: var(--chip-hover-shadow);
+        transform: translateY(-1px);
+        color: var(--chip-active-text);
+    }
+
+    &.active {
+        background: var(--chip-active-bg);
+        border-color: var(--chip-active-border);
+        box-shadow: var(--chip-active-shadow);
+        color: var(--chip-active-text);
+    }
 }
 
 .cards {

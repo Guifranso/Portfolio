@@ -2,19 +2,25 @@
     "nav": {
         "about": "About",
         "projects": "Projects",
-        "experiences": "Experience"
+        "experiences": "Experience",
+        "networks": "Networks"
     },
     "about": {
         "title": "About",
         "greeting": "Hi! I'm Guilherme, a Fullstack Developer!",
         "education1": "Developer interested in management, development, and project optimization. High performance and fast learner, with experience in diverse areas such as Web Development (Fullstack), Mobile, Scripting, Cloud, Game Development, and acting in the educational field as a programming teacher.",
-        "education2": "I've participated in hackathons and competitions, achieving 1st place at SuperGeeks Play for Family Hackathon (2019) and 1st place at Techers We code we change Hackathon (2022). I'm excited about the future and committed to applying my knowledge to contribute to projects that can positively impact people.",
-        "hobbies": "Besides all that, in my free time I enjoy gaming and playing guitar.",
+        "education2": "",
+        "hobbies": "Besides all that, in my free time I enjoy developing personal projects, playing games and playing guitar and piano.",
         "imageAlt": "Author's photo"
     },
     "projects": {
         "title": "Projects",
         "viewProject": "View Project",
+        "filters": {
+            "all": "All",
+            "games": "Games",
+            "websites": "Websites"
+        },
         "items": {
             "dyeGather": {
                 "title": "Dye Gather",
@@ -27,6 +33,10 @@
             "fallInTheRain": {
                 "title": "Fall in the Rain",
                 "description": "Casual prototype about falling while dodging rain and obstacles, made to test controls and atmosphere."
+            },
+            "pianoTrainer": {
+                "title": "Piano Trainer",
+                "description": "Website with various music theory and practice exercises, designed to be an easily accessible tool to help musicians improve their skills."
             }
         }
     },
@@ -81,6 +91,32 @@
                 "institution": "Techers - School of Technology",
                 "period": "2019 - 2022",
                 "description": "Specialization in web development with JavaScript, HTML, and CSS. Game development in C#, Python, and engines like Unity and Unreal. Participation in projects and hackathons from conception to implementation of games and mobile/web applications."
+            }
+        }
+    },
+    "networks": {
+        "title": "Networks",
+        "description": "Find me on social networks and development platforms:",
+        "items": {
+            "github": {
+                "name": "GitHub",
+                "description": "Open source repositories and projects"
+            },
+            "linkedin": {
+                "name": "LinkedIn",
+                "description": "Professional profile and networking"
+            },
+            "itchio": {
+                "name": "itch.io",
+                "description": "Published games and game jams"
+            },
+            "leetcode": {
+                "name": "LeetCode",
+                "description": "Programming and algorithm challenges"
+            },
+            "beecrowd": {
+                "name": "beecrowd",
+                "description": "Competitive programming"
             }
         }
     },

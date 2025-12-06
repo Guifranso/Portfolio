@@ -2,31 +2,41 @@
     "nav": {
         "about": "Sobre",
         "projects": "Projetos",
-        "experiences": "Experiências"
+        "experiences": "Experiências",
+        "networks": "Redes"
     },
     "about": {
         "title": "Sobre",
         "greeting": "Olá! Sou Guilherme, Desenvolvedor Fullstack!",
         "education1": "Desenvolvedor com interesse em gestão, desenvolvimento e otimização de projetos. Alto desempenho e rápido aprendizado, com experiências em diversas áreas, como desenvolvimento Web (Fullstack), Mobile, Scripting, Cloud, desenvolvimento de jogos e atuação na área educacional como professor de programação.",
-        "education2": "Participei de hackathons e competições, conquistando 1º lugar no Hackaton SuperGeeks Play for Family (2019) e 1º lugar no Hackaton Techers We code we change (2022). Estou animado com o futuro e comprometido a aplicar meus conhecimentos para contribuir com projetos que possam impactar positivamente as pessoas.",
-        "hobbies": "Além de tudo, no meu tempo livre gosto de jogar e tocar guitarra.",
+        "education2": "",
+        "hobbies": "Além disso, no meu tempo livre gosto de desenvolver projetos pessoais, jogar e tocar guitarra e piano.",
         "imageAlt": "Foto do autor"
     },
     "projects": {
         "title": "Projetos",
         "viewProject": "Ver Projeto",
+        "filters": {
+            "all": "Todos",
+            "games": "Jogos",
+            "websites": "Websites"
+        },
         "items": {
             "dyeGather": {
                 "title": "Dye Gather",
-                "description": "Jogo 2D feito em uma game jam; você mistura cores recolhendo tintas pelo mapa para abrir caminho até a saída."
+                "description": "Jogo top-down 2D em que o jogador precisa coletar itens e resolver missões para completar a história, desenvolvido na Unity."
             },
             "reivals": {
                 "title": "Reivals",
-                "description": "Arena shooter top-down com partidas curtas, foco em ritmo rápido e projéteis por todos os lados."
+                "description": "Jogo coop local, com modo história e multiplayer, no qual dois reis disputam pela coroa em diferentes tipos de batalhas, desenvolvido na Unity 2D."
             },
             "fallInTheRain": {
                 "title": "Fall in the Rain",
-                "description": "Protótipo casual sobre descer enquanto desvia da chuva e dos obstáculos, feito para testar controles e atmosfera."
+                "description": "Jogo top-down 2.5D no qual o jogador precisa encontrar todos os gatos perdidos e devolvê-los a seus donos, desenvolvido na Unity."
+            },
+            "pianoTrainer": {
+                "title": "Piano Trainer",
+                "description": "Website com diversos exercícios de teoria e prática musical, com o propósito de ser uma ferramenta de fácil acesso para ajudar músicos a praticarem suas habilidades."
             }
         }
     },
@@ -81,6 +91,31 @@
                 "institution": "Techers - Escola de Tecnologia",
                 "period": "2019 - 2022",
                 "description": "Especialização em desenvolvimento web com JavaScript, HTML e CSS. Desenvolvimento de jogos em C#, Python e engines como Unity e Unreal. Participação em projetos e hackatons desde a concepção até a implementação de jogos e aplicações mobile/web."
+            }
+        }
+    },
+    "networks": {
+        "title": "Redes",
+        "items": {
+            "github": {
+                "name": "GitHub",
+                "description": "Repositórios e projetos de código aberto"
+            },
+            "linkedin": {
+                "name": "LinkedIn",
+                "description": "Perfil profissional e networking"
+            },
+            "itchio": {
+                "name": "itch.io",
+                "description": "Jogos publicados e game jams"
+            },
+            "leetcode": {
+                "name": "LeetCode",
+                "description": "Desafios de programação e algoritmos"
+            },
+            "beecrowd": {
+                "name": "beecrowd",
+                "description": "Competições de programação"
             }
         }
     },

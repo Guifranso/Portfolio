@@ -13,7 +13,8 @@ export default function Header({ children, ...props }) {
     const navItems = [
         { href: '/sobre', label: t('about') },
         { href: '/projetos', label: t('projects') },
-        { href: '/experiencias', label: t('experiences') }
+        { href: '/experiencias', label: t('experiences') },
+        { href: '/redes', label: t('networks') }
     ]
 
     return (
