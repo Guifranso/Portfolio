@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { useScrollReveal } from '../../hooks/useScrollReveal'
 
 import styles from './ProjectCard.module.scss'
 
 export default function ProjectCard({ title, description, imageSrc, href, delay = 0 }) {
+    const t = useTranslations('projects')
     const [ref, isVisible] = useScrollReveal({ threshold: 0.1 })
 
     const delayClass = delay > 0 ? `scroll-reveal-delay-${Math.min(delay, 5)}` : ''
@@ -30,7 +32,7 @@ export default function ProjectCard({ title, description, imageSrc, href, delay 
                     <h2 className={styles.cardTitle}>{title}</h2>
                 </div>
                 <p className={styles.description}>{description}</p>
-                <span className={styles.cta}>Ver Projeto</span>
+                <span className={styles.cta}>{t('viewProject')}</span>
             </div>
         </a>
     )

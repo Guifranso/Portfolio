@@ -15,6 +15,7 @@
     },
     "projects": {
         "title": "Projetos",
+        "viewProject": "Ver Projeto",
         "items": {
             "dyeGather": {
                 "title": "Dye Gather",

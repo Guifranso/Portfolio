@@ -36,7 +36,7 @@ export default function Sobre() {
                     >
                         <p className={styles.paragraph}>{t('greeting')}</p>
                         <p className={styles.paragraph}>
-                            {t('location')} {t('education1')}
+                            {t('education1')}
                         </p>
                         <p className={styles.paragraph}>
                             {t('education2')}

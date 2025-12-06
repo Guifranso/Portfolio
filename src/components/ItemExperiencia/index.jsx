@@ -23,8 +23,8 @@ export default function ItemExperiencia({ funcao, instituicao, prazo, descricao,
             />
             <div className={styles.infoContainer}>
                 <h2 className={styles.title}>{funcao}</h2>
-                <p className={styles.text}>{instituicao} - {prazo}</p>
-                <p className={styles.text}>- {descricao}</p>
+                <p className={styles.subtitle}>{instituicao} - {prazo}</p>
+                <p className={styles.text}>{descricao}</p>
             </div>
         </div>
     )

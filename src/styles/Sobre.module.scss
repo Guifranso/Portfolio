@@ -13,14 +13,13 @@
 }
 
 .main {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: min(70%, 1100px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    padding: 0 1.5rem;
+    gap: 1.5rem;
+    width: min(1100px, 94vw);
+    margin: 0 auto;
+    padding: 3rem 0 4rem;
 }
 
 .title {
@@ -51,6 +50,7 @@
     color: $gray-900;
     font-weight: 300;
     line-height: 1.7;
+    font-size: 1rem;
 
     :global([data-theme='dark']) & {
         color: $primary-dark;
@@ -62,11 +62,14 @@
     margin: 0.5rem 0;
 }
 
-// Tablet
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .main {
-        width: 90%;
-        padding: 0 1rem;
+        width: 92vw;
+        padding: 2.5rem 0 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
     }
 
     .content {
@@ -90,21 +93,13 @@
     }
 }
 
-// Mobile
-@media (max-width: 600px) {
+@media (max-width: 540px) {
     .page {
         padding-top: 4rem;
     }
 
-    .main {
-        width: 100%;
-        margin-top: 1.5rem;
-    }
-
     .title {
         font-size: 2.5rem;
-        margin: 1.5rem 0;
-        text-align: center;
     }
 
     .image {
