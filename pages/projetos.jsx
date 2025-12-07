@@ -42,7 +42,7 @@ export default function Projetos() {
             title: t('items.pianoTrainer.title'),
             description: t('items.pianoTrainer.description'),
             imageSrc: '/piano-trainer.png',
-            href: '#',
+            href: 'https://piano-trainer-topaz.vercel.app/pages/treino-auditivo/index.html',
             category: 'websites'
         },
         {
