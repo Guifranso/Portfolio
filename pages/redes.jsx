@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import { useTranslations } from 'next-intl'
@@ -38,6 +39,29 @@ export default function Redes() {
 
     const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
     const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.1 })
+    const [contactRef, contactVisible] = useScrollReveal({ threshold: 0.1 })
+
+    const [formData, setFormData] = useState({
+        name: '',
+        message: ''
+    })
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }))
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const { name, message } = formData
+        const subject = encodeURIComponent(`Contato de ${name} - Portfolio`)
+        const body = encodeURIComponent(`${name}\n\n${message}`)
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=guifranca60@gmail.com&su=${subject}&body=${body}`
+        window.open(gmailUrl, '_blank')
+    }
 
     return (
         <div className={styles.page}>
@@ -74,6 +98,37 @@ export default function Redes() {
                             </div>
                         </a>
                     ))}
+                </div>
+
+                <div
+                    ref={contactRef}
+                    className={`${styles.contactSection} scroll-reveal scroll-reveal-delay-3 ${contactVisible ? 'scroll-reveal-visible' : ''}`}
+                >
+                    <h2 className={styles.contactTitle}>{t('contact.title')}</h2>
+                    <form className={styles.contactForm} onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleInputChange}
+                            placeholder={t('contact.namePlaceholder')}
+                            className={styles.formInput}
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleInputChange}
+                            placeholder={t('contact.messagePlaceholder')}
+                            className={styles.formTextarea}
+                            rows={5}
+                            required
+                        />
+                        <button type="submit" className={styles.submitButton}>
+                            <i className="fa-solid fa-paper-plane"></i>
+                            {t('contact.sendButton')}
+                        </button>
+                    </form>
                 </div>
             </main>
             <Footer />

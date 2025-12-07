@@ -9,10 +9,12 @@ import styles from '../src/styles/Projetos.module.scss'
 export default function Projetos() {
     const t = useTranslations('projects')
     const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
+    const [githubRef, githubVisible] = useScrollReveal({ threshold: 0.1 })
     const [activeFilter, setActiveFilter] = useState('all')
 
     const projects = [
         {
+            id: 'dyeGather',
             title: t('items.dyeGather.title'),
             description: t('items.dyeGather.description'),
             imageSrc: 'https://img.itch.zone/aW1nLzcxODE5MzgucG5n/original/Hr3dlu.png',
@@ -20,6 +22,7 @@ export default function Projetos() {
             category: 'games'
         },
         {
+            id: 'reivals',
             title: t('items.reivals.title'),
             description: t('items.reivals.description'),
             imageSrc: 'https://img.itch.zone/aW1hZ2UvMTM3NTEzOS84MDI3NDY1LnBuZw==/original/vxa9e7.png',
@@ -27,6 +30,7 @@ export default function Projetos() {
             category: 'games'
         },
         {
+            id: 'fallInTheRain',
             title: t('items.fallInTheRain.title'),
             description: t('items.fallInTheRain.description'),
             imageSrc: 'https://img.itch.zone/aW1nLzEzNjU2MTczLnBuZw==/original/KK1C6C.png',
@@ -34,9 +38,18 @@ export default function Projetos() {
             category: 'games'
         },
         {
+            id: 'pianoTrainer',
             title: t('items.pianoTrainer.title'),
             description: t('items.pianoTrainer.description'),
             imageSrc: '/piano-trainer.png',
+            href: '#',
+            category: 'websites'
+        },
+        {
+            id: 'gruconWebsite',
+            title: t('items.gruconWebsite.title'),
+            description: t('items.gruconWebsite.description'),
+            imageSrc: '/grucon-website.png',
             href: '#',
             category: 'websites'
         }
@@ -76,11 +89,26 @@ export default function Projetos() {
                 <div className={styles.cards}>
                     {filteredProjects.map((project, index) => (
                         <ProjectCard
-                            key={project.href}
+                            key={project.id}
                             {...project}
                             delay={index + 1}
                         />
                     ))}
+                </div>
+                <div
+                    ref={githubRef}
+                    className={`${styles.githubSection} scroll-reveal scroll-reveal-delay-2 ${githubVisible ? 'scroll-reveal-visible' : ''}`}
+                >
+                    <p className={styles.githubText}>{t('moreProjects')}</p>
+                    <a
+                        href="https://github.com/Guifranso?tab=repositories"
+                        target="_blank"
+                        rel="noreferrer"
+                        className={styles.githubLink}
+                    >
+                        <i className="fa-brands fa-github"></i>
+                        {t('visitGithub')}
+                    </a>
                 </div>
             </main>
             <Footer />

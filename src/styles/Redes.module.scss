@@ -166,4 +166,133 @@
     .icon {
         font-size: 1.5rem;
     }
+
+    .contactSection {
+        padding: 1.5rem;
+    }
+
+    .contactTitle {
+        font-size: 1.5rem;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+
+    .formInput,
+    .formTextarea {
+        font-size: 0.9rem;
+    }
+
+    .submitButton {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+// Contact Section
+.contactSection {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    :global([data-theme='light']) & {
+        background: rgba(0, 0, 0, 0.02);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+}
+
+.contactTitle {
+    color: $primary-light;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formRow {
+    display: flex;
+    gap: 1rem;
+}
+
+.formInput,
+.formTextarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: $gray-900;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+
+    :global([data-theme='dark']) & {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: $primary-dark;
+    }
+
+    :global([data-theme='light']) & {
+        background: rgba(0, 0, 0, 0.02);
+        border-color: rgba(0, 0, 0, 0.08);
+    }
+
+    &::placeholder {
+        color: $gray-500;
+
+        :global([data-theme='dark']) & {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    &:focus {
+        border-color: $primary-light;
+        box-shadow: 0 0 0 3px rgba($primary-light, 0.15);
+    }
+}
+
+.formTextarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submitButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, $primary-light, darken($primary-light, 10%));
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba($primary-light, 0.3);
+    align-self: flex-start;
+
+    i {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba($primary-light, 0.4);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
 }

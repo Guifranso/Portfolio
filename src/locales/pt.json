@@ -37,8 +37,14 @@
             "pianoTrainer": {
                 "title": "Piano Trainer",
                 "description": "Website com diversos exercícios de teoria e prática musical, com o propósito de ser uma ferramenta de fácil acesso para ajudar músicos a praticarem suas habilidades."
+            },
+            "gruconWebsite": {
+                "title": "Website Grucon",
+                "description": "Website desenvolvido para o grupo Grucon com o objetivo de facilitar o acesso a informações acerca de suas atividades e eventos."
             }
-        }
+        },
+        "moreProjects": "Nem todos os meus projetos estão aqui ainda!",
+        "visitGithub": "Quer ver mais dos meus projetos? Acesse meu GitHub!"
     },
     "experiences": {
         "title": "Experiências",
@@ -117,6 +123,16 @@
                 "name": "beecrowd",
                 "description": "Competições de programação"
             }
+        },
+        "contact": {
+            "title": "Entre em contato comigo!",
+            "namePlaceholder": "Seu nome",
+            "emailPlaceholder": "Seu e-mail",
+            "messagePlaceholder": "Sua mensagem...",
+            "sendButton": "Enviar Mensagem",
+            "sending": "Enviando...",
+            "successMessage": "Mensagem enviada com sucesso!",
+            "errorMessage": "Erro ao enviar mensagem. Tente novamente."
         }
     },
     "language": {
