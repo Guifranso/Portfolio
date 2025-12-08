@@ -9,6 +9,7 @@ import styles from '../src/styles/Sobre.module.scss'
 export default function Sobre() {
     const t = useTranslations('about')
 
+    const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
     const [imageRef, imageVisible] = useScrollReveal({ threshold: 0.1 })
     const [textRef, textVisible] = useScrollReveal({ threshold: 0.1 })
 
@@ -16,7 +17,10 @@ export default function Sobre() {
         <div className={styles.page}>
             <Header />
             <main className={styles.main}>
-                <h1 className={styles.title}>{t('title')}</h1>
+                <h1
+                    ref={titleRef}
+                    className={`${styles.title} scroll-reveal ${titleVisible ? 'scroll-reveal-visible' : ''}`}
+                >{t('title')}</h1>
                 <div className={styles.content}>
                     <div
                         ref={imageRef}

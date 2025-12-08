@@ -9,6 +9,7 @@ import styles from '../src/styles/Projetos.module.scss'
 export default function Projetos() {
     const t = useTranslations('projects')
     const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
+    const [filterRef, filterVisible] = useScrollReveal({ threshold: 0.1 })
     const [githubRef, githubVisible] = useScrollReveal({ threshold: 0.1 })
     const [activeFilter, setActiveFilter] = useState('all')
 
@@ -75,7 +76,10 @@ export default function Projetos() {
                         className={`${styles.title} scroll-reveal ${titleVisible ? 'scroll-reveal-visible' : ''}`}
                     >{t('title')}</h1>
                 </div>
-                <div className={styles.filterContainer}>
+                <div
+                    ref={filterRef}
+                    className={`${styles.filterContainer} scroll-reveal scroll-reveal-delay-1 ${filterVisible ? 'scroll-reveal-visible' : ''}`}
+                >
                     {filters.map((filter) => (
                         <button
                             key={filter.key}
