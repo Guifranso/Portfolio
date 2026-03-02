@@ -54,25 +54,25 @@
                 "role": "Developer and Researcher",
                 "institution": "Ford",
                 "period": "January 2025 - Present",
-                "description": "Development of internal projects using Angular, Spring, and SQL."
+                "description": "Fullstack development of internal projects using Angular, Spring, PostgreSQL, Azure, and Jenkins."
             },
             "bioma": {
                 "role": "Fullstack Developer",
                 "institution": "Bioma Investimentos",
                 "period": "August 2025 - September 2025",
-                "description": "Development and maintenance of SaaS projects with Java (Legacy systems), Javascript (Next and Nest), Python (Fast API), AWS, Docker, and relational and non-relational databases."
+                "description": "Refactoring of a SaaS consulting system for rural producers, migrating the backend from Java (Spring) to JavaScript (NestJS) and restyling the frontend (Next.js). Responsibilities included implementing new features, integrating ETL pipelines, and configuring SSO authentication using Python (FastAPI), AWS, Docker, MySQL, and MongoDB."
             },
             "wisebyte": {
                 "role": "Java Backend Developer",
                 "institution": "Wisebyte",
                 "period": "November 2023 - December 2024",
-                "description": "Backend development of financial systems, such as automatic debit system integrations, Crawlers for collection and testing systems, as well as external system integration using Java with Quarkus, messaging with Kafka, scripting with Shell and Python (Selenium), and use of AWS and Docker."
+                "description": "Backend development of financial systems, including automatic debit integrations and the creation of web scrapers, automating the collection and extraction of data from over 1,000 PDF invoices monthly. Technologies used included Java (Quarkus), Kafka, Python (Selenium), Shell scripting, Grafana, AWS, Docker, and GitHub Actions."
             },
             "arcom": {
                 "role": "Fullstack Developer",
                 "institution": "ARCOM",
                 "period": "June 2023 - January 2024",
-                "description": "Project development using React, TypeScript, Java, Kotlin, SQL, and Python (Flask), such as stock management and e-commerce through websites or mobile devices and auxiliary systems for forklifts and pallet trucks."
+                "description": "Project development using React, TypeScript, Java (Spring), Kotlin (Jetpack Compose), SQL, and Python (Flask), including stock management systems, web and mobile e-commerce, and auxiliary applications for forklifts and pallet trucks. The projects increased inventory efficiency and reduced operational costs by over BRL 150,000 by replacing outsourced equipment and systems with proprietary solutions."
             },
             "iftmTeacher": {
                 "role": "Teacher",

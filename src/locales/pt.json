@@ -54,25 +54,25 @@
                 "role": "Desenvolvedor e Pesquisador",
                 "institution": "Ford",
                 "period": "Janeiro de 2025 - Presente",
-                "description": "Desenvolvimento de projetos internos utilizando Angular, Spring e SQL."
+                "description": "Desenvolvimento fullstack de projetos internos utilizando Angular, Spring, PostgreSQL, Azure e Jenkins."
             },
             "bioma": {
                 "role": "Desenvolvedor Fullstack",
                 "institution": "Bioma Investimentos",
                 "period": "Agosto de 2025 - Setembro de 2025",
-                "description": "Desenvolvimento e manutenção de projetos SaaS com Java (Sistemas legados), Javascript (Next e Nest), Python (Fast API), AWS, Docker e bancos relacionais e não relacionais."
+                "description": "Refatoração de um sistema SaaS de consultoria para produtores rurais, realizando a migração do backend de Java (Spring) para JavaScript (NestJS) e a reestilização do frontend (Next.js). A atuação incluiu a implementação de novas funcionalidades, integrações com ETL e autenticação SSO, utilizando Python (FastAPI), AWS, Docker, MySQL e MongoDB."
             },
             "wisebyte": {
                 "role": "Desenvolvedor Java Backend",
                 "institution": "Wisebyte",
                 "period": "Novembro de 2023 - Dezembro de 2024",
-                "description": "Desenvolvimento backend de sistemas financeiros, como integrações de sistemas de débito automático, Crawlers para sistemas de coletas e testes, além de integração de sistemas externos utilizando Java com Quarkus, mensageria com Kafka, scripting com Shell e Python (Selenium) e uso de AWS e Docker."
+                "description": "Desenvolvimento backend de sistemas financeiros, com integrações de débito automático e criação de web scrapers, automatizando a coleta e extração de dados de mais de 1.000 faturas em PDFs mensalmente. Tecnologias utilizadas foram Java (Quarkus), Kafka, Python (Selenium), Shell scripting, Grafana, AWS, Docker e GitHub Actions."
             },
             "arcom": {
                 "role": "Desenvolvedor Fullstack",
                 "institution": "ARCOM",
                 "period": "Junho de 2023 - Janeiro de 2024",
-                "description": "Desenvolvimento de projetos utilizando React, TypeScript, Java, Kotlin, SQL e Python (Flask), como gerenciamento de estoque e ecommerce através de sites ou dispositivos móveis e sistemas auxiliares para empilhadeiras e paleteiras."
+                "description": "Desenvolvimento de projetos utilizando React, TypeScript, Java (Spring), Kotlin (Jetpack Compose), SQL e Python (Flask), tais como sistemas de gerenciamento de estoque e e-commerce web e mobile, além de aplicações auxiliares para empilhadeiras e paleteiras. Os projetos aumentaram a eficiência do estoque e reduziram mais de R$ 150 mil em custos operacionais ao substituir equipamentos e sistemas terceirizados por soluções próprias."
             },
             "iftmTeacher": {
                 "role": "Professor",
