@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 4.5rem;
+    transition: background-color 0.3s ease;
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;
@@ -100,12 +101,12 @@
 
 .cardDescription {
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 400;
     color: $gray-600;
-    line-height: 1.4;
+    line-height: 1.5;
 
     :global([data-theme='dark']) & {
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.78);
     }
 }
 
@@ -252,7 +253,7 @@
         color: $gray-500;
 
         :global([data-theme='dark']) & {
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.5);
         }
     }
 

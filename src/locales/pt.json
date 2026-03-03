@@ -7,11 +7,17 @@
     },
     "about": {
         "title": "Sobre",
+        "whoAmI": "Quem sou",
         "greeting": "Olá! Sou Guilherme, Desenvolvedor Fullstack!",
         "education1": "Desenvolvedor com interesse em gestão, desenvolvimento e otimização de projetos. Alto desempenho e rápido aprendizado, com experiências em diversas áreas, como desenvolvimento Web (Fullstack), Mobile, Scripting, Cloud, desenvolvimento de jogos e atuação na área educacional como professor de programação.",
         "education2": "",
         "hobbies": "Além disso, no meu tempo livre gosto de desenvolver projetos pessoais, jogar e tocar guitarra e piano.",
-        "imageAlt": "Foto do autor"
+        "imageAlt": "Foto do autor",
+        "myStack": "Minha Stack",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database",
+        "tools": "Tools"
     },
     "projects": {
         "title": "Projetos",

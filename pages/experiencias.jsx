@@ -9,19 +9,14 @@ import styles from '../src/styles/Experiencias.module.scss'
 export default function Experiencias() {
     const t = useTranslations('experiences')
 
-    const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
+
     const [eduTitleRef, eduTitleVisible] = useScrollReveal({ threshold: 0.1 })
 
     return (
         <div className={styles.page}>
             <Header />
             <main className={styles.main}>
-                <h1
-                    ref={titleRef}
-                    className={`${styles.title} scroll-reveal ${titleVisible ? 'scroll-reveal-visible' : ''}`}
-                >
-                    {t('title')}
-                </h1>
+
                 <div className={styles.list}>
                     <ItemExperiencia
                         funcao={t('items.ford.role')}

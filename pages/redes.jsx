@@ -37,7 +37,7 @@ const networkLinks = [
 export default function Redes() {
     const t = useTranslations('networks')
 
-    const [titleRef, titleVisible] = useScrollReveal({ threshold: 0.1 })
+
     const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.1 })
     const [contactRef, contactVisible] = useScrollReveal({ threshold: 0.1 })
 
@@ -67,12 +67,7 @@ export default function Redes() {
         <div className={styles.page}>
             <Header />
             <main className={styles.main}>
-                <div
-                    ref={titleRef}
-                    className={`scroll-reveal ${titleVisible ? 'scroll-reveal-visible' : ''}`}
-                >
-                    <h1 className={styles.title}>{t('title')}</h1>
-                </div>
+
                 <div
                     ref={gridRef}
                     className={`${styles.grid} scroll-reveal scroll-reveal-delay-2 ${gridVisible ? 'scroll-reveal-visible' : ''}`}

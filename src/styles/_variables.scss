@@ -1,5 +1,5 @@
-$primary-light: #AAAAAA;
-$primary-dark: #A1A1AA;
+$primary-light: #595959;
+$primary-dark: #C8C8D0;
 $secondary-light: #FFF;
 $secondary-dark: #000;
 $hover-dark: #FFFFFF;
@@ -8,6 +8,10 @@ $back-primary-dark: #131314;
 
 $gray-900: #111827;
 $gray-600: #4b5563;
-$gray-500: #6b7280;
+$gray-500: #545B68;
 
 $font-sans: "Inter", Roboto, sans-serif;
+
+// Focus ring
+$focus-ring-light: rgba(59, 130, 246, 0.5);
+$focus-ring-dark: rgba(96, 165, 250, 0.6);

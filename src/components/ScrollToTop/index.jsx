@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import styles from './ScrollToTop.module.scss'
 
-export default function ScrollToTop () {
+export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
 
   const handleScroll = () => {
@@ -27,6 +27,7 @@ export default function ScrollToTop () {
       onClick={scrollToTop}
       className={`${styles.button} ${isVisible ? styles.visible : styles.hidden
         }`}
+      aria-label="Voltar ao topo da página"
     >
       <i className={`default-hover-item fa-solid fa-circle-up ${styles.icon}`}></i>
     </button>
