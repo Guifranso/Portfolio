@@ -89,7 +89,6 @@ function StackCategory({ title, icons, delay, scrollRef, isVisible }) {
 export default function Sobre() {
     const t = useTranslations('about')
 
-
     const [imageRef, imageVisible] = useScrollReveal({ threshold: 0.1 })
     const [textRef, textVisible] = useScrollReveal({ threshold: 0.1 })
     const [stackTitleRef, stackTitleVisible] = useScrollReveal({ threshold: 0.1 })
@@ -103,10 +102,7 @@ export default function Sobre() {
             <Header />
             <main className={styles.main}>
 
-
-                {/* Bento Grid */}
                 <div className={styles.bentoGrid}>
-                    {/* Image Card */}
                     <div
                         ref={imageRef}
                         className={`${styles.bentoCard} ${styles.imageCard} scroll-reveal ${imageVisible ? 'scroll-reveal-visible' : ''}`}
@@ -120,7 +116,6 @@ export default function Sobre() {
                         />
                     </div>
 
-                    {/* Who I Am Card */}
                     <div
                         ref={textRef}
                         className={`${styles.bentoCard} ${styles.whoAmICard} scroll-reveal scroll-reveal-delay-2 ${textVisible ? 'scroll-reveal-visible' : ''}`}
@@ -136,7 +131,6 @@ export default function Sobre() {
                         </div>
                     </div>
 
-                    {/* Stack Section */}
                     <div className={`${styles.bentoCard} ${styles.stackSection}`}>
                         <h2
                             ref={stackTitleRef}

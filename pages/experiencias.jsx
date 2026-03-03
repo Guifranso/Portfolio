@@ -9,7 +9,6 @@ import styles from '../src/styles/Experiencias.module.scss'
 export default function Experiencias() {
     const t = useTranslations('experiences')
 
-
     const [eduTitleRef, eduTitleVisible] = useScrollReveal({ threshold: 0.1 })
 
     return (

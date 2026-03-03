@@ -37,7 +37,6 @@ const networkLinks = [
 export default function Redes() {
     const t = useTranslations('networks')
 
-
     const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.1 })
     const [contactRef, contactVisible] = useScrollReveal({ threshold: 0.1 })
 
