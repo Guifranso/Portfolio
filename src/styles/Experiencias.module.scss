@@ -6,7 +6,6 @@
     justify-content: space-between;
     min-height: 100vh;
     padding-top: 4.5rem; // Compensate for fixed header
-    transition: background-color 0.3s ease;
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;

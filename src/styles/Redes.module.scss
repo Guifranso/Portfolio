@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 4.5rem;
-    transition: background-color 0.3s ease;
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;

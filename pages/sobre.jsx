@@ -71,12 +71,13 @@ function StackCategory({ title, icons, delay, scrollRef, isVisible }) {
             <div className={styles.stackIcons}>
                 {icons.map((icon) => (
                     <div key={icon} className={styles.stackIconItem}>
-                        <img
+                        <Image
                             src={`https://skillicons.dev/icons?i=${icon}`}
                             alt={techNames[icon] || icon}
                             width={48}
                             height={48}
                             loading="lazy"
+                            unoptimized={true}
                         />
                         <span className={styles.tooltip}>{techNames[icon] || icon}</span>
                     </div>

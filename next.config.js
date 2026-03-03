@@ -6,6 +6,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'img.itch.zone',
             },
+            {
+                protocol: 'https',
+                hostname: 'skillicons.dev',
+            },
         ],
     },
     i18n: {

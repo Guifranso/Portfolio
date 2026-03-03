@@ -2,12 +2,11 @@ import { useTheme } from 'next-themes'
 
 import styles from './ToggleTheme.module.scss'
 
-export default function ToggleTheme ({ children, ...props }) {
-    const { theme, setTheme } = useTheme()
+export default function ToggleTheme({ children, ...props }) {
+    const { resolvedTheme, setTheme } = useTheme()
 
     const toggle = () => {
-        // eslint-disable-next-line eqeqeq
-        theme == 'dark' ? setTheme('light') : setTheme('dark')
+        resolvedTheme === 'dark' ? setTheme('light') : setTheme('dark')
     }
 
     return (
