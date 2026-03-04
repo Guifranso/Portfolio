@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    padding-top: 4.5rem; // Compensate for fixed header
+    padding-top: 4.5rem;
 
     :global([data-theme='dark']) & {
         background-color: $back-primary-dark;
@@ -22,18 +22,73 @@
     padding: 3rem 0 4rem;
 }
 
-.title {
-    color: $primary-light;
-    font-size: 3.75rem;
-    line-height: 1;
-    font-weight: 700;
-    margin: 2.5rem 0;
+.bentoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
 }
 
-.list {
+.bentoCard {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 1.25rem;
+    padding: 1.75rem;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    :global([data-theme='dark']) & {
+        background: rgba(255, 255, 255, 0.04);
+        border-color: rgba(255, 255, 255, 0.08);
+
+        &:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.sectionCard {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 0.25rem;
+}
+
+.sectionTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $gray-900;
+    margin: 0;
+    padding-bottom: 0.75rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 3rem;
+        height: 3px;
+        background: $primary-light;
+        border-radius: 2px;
+    }
+
+    :global([data-theme='dark']) & {
+        color: #e4e4e7;
+
+        &::after {
+            background: $primary-dark;
+        }
+    }
+}
+
+.itemsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -42,8 +97,13 @@
         padding: 2.5rem 0 3rem;
     }
 
-    .title {
-        font-size: 3rem;
+    .sectionTitle {
+        text-align: center;
+
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -52,7 +112,7 @@
         padding-top: 4rem;
     }
 
-    .title {
-        font-size: 2.5rem;
+    .bentoCard {
+        padding: 1.25rem;
     }
 }
