@@ -112,7 +112,7 @@ export default function Sobre() {
                             className={styles.image}
                             src="/profile-picture.jpg"
                             width={320}
-                            height={480}
+                            height={400}
                             alt={t('imageAlt')}
                         />
                     </div>

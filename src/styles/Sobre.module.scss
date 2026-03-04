@@ -80,8 +80,6 @@
 
 .image {
     border-radius: 1rem;
-    width: 280px;
-    height: 400px;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -314,8 +312,8 @@
     }
 
     .image {
-        width: 220px;
-        height: 320px;
+        max-width: 100%;
+        /* O tamanho agora é gerenciado pelas propriedades do Next.js Image, mas mantido responsivo para mobile */
     }
 
     .stackGrid {
@@ -355,8 +353,7 @@
     }
 
     .image {
-        width: 180px;
-        height: 260px;
+        max-width: 100%;
     }
 
     .textContainer {
